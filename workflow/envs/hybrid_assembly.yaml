@@ -1,0 +1,13 @@
+name: uni+fmp-env
+channels:
+  - bioconda
+  - anaconda
+dependencies:
+  - flye=2.9.1
+  - medaka=1.6.0
+  - tensorflow=2.2
+  - polypolish=0.5.0
+  - unicycler=0.4.8
+  - bwa=0.7.17
+  - seqkit=2.2.0
+  - bcftools=1.15.1
