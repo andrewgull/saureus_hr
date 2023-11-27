@@ -1,0 +1,50 @@
+strains:
+  DA70322: DA70322
+  DA70338: DA70338
+  DA70484: DA70484
+  DA70500: DA70500
+  DA70700: DA70700
+  DA70890: DA70890
+  DA70880: DA70880
+  DA70710: DA70710
+  DA70900: DA70900
+  DA70300: DA70300
+  DA70504: DA70504
+  DA70518: DA70518
+  DA70520: DA70520
+  DA70870: DA70870
+
+# rule qc_illumina_* params
+fastqc_path: "/home/andrei/miniconda3/bin/fastqc"
+
+# rule trim_illumina params
+quality: "20"
+window_size: "4"
+cut_right: "20"
+length_required: "50"
+trim_front: "10"
+
+# rule trim_nanopore params
+min_nanopore_length: 1000
+
+# rule adaptive_hybrid_assembly params
+basecaller: "r941_min_fast_g507"
+genome_size: "3m"
+coverage: 30
+genome_length: 2800000
+cov_threshold: 31
+
+# rule qc_assembly params
+tax_dataset: "bacillales_odb10"
+
+# rule assembly_summary params
+position: 2
+
+# rule assembly_annotation params
+centre: "UU"
+minlen: "200"
+genus: "Staphylococcus"
+species: "aureus"
+
+# rule rg_annotation params
+filter_criterion: "Loose"
